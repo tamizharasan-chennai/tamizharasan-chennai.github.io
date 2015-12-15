@@ -45,11 +45,6 @@ body,html{
 #about .container{
 	height: 100%;
 }
-#about .overlay{
-    background: rgba(0,0,0, .7);
-    width: 100%;
-    height: 100%;
-}
 #about .valign-wrapper{
 	height: 100%;
 	display: -ms-flexbox;
@@ -78,13 +73,6 @@ body,html{
 #about p{
 	color: #FFF;
 	font-size: 22px;
-}
-#about .scrollTo{
-	margin-top: 80px;
-}
-#about .scrollTo a{
-	color: #FFF;
-	font-size: 60px;
 }
 
 /* Experience */
@@ -117,7 +105,20 @@ body,html{
 	font-size: 16px;
 }
 #experience .panel-body{
-	padding: 0;
+	padding: 16px;
+	background: #F7F3EA;
+}
+#experience .flex{
+	height: 160px;
+	display: -ms-flexbox;
+		display: -webkit-flex;
+			display: flex;
+	-ms-flex-align: center;
+		-webkit-align-items: center;
+			-webkit-box-align: center;
+				align-items: center;
+	font-size: 40px;
+	text-align: center;
 }
 #experience img{
 	width: 100%;
@@ -143,21 +144,6 @@ body,html{
     font-weight: 700;
     margin-bottom: 50px;
     text-align: center;
-}
-#skills .skill{
-	width: 150px;
-	margin: 0 auto 50px;
-	position: relative;
-}
-#skills .skill span{
-    font-size: 30px;
-    height: 150px;
-    left: 0;
-    line-height: 150px;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 100%;
 }
 #skills .skill h3{
 	color: #000;
@@ -232,15 +218,38 @@ body,html{
 	transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
-	border: 5px solid #FFF;
 	margin-bottom: 30px;
+	background: #00BCD4;
 }
-#portfolio .portfolio img{
+#portfolio .portfolio a{
   -webkit-transition: .2s ease-in-out;
   -moz-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;  
+  transition: .2s ease-in-out;
+	height: 240px;
+	display: -ms-flexbox;
+		display: -webkit-flex;
+			display: flex;
+	-ms-flex-align: center;
+		-webkit-align-items: center;
+			-webkit-box-align: center;
+				align-items: center;
+  text-align: center;
 }
-#portfolio .portfolio:hover img{
+#portfolio .portfolio span{
+	display: block;
+	text-align:center;
+	width: 100%;
+	font-size: 26px;
+	padding: 20px;
+}
+#portfolio .portfolio a{
+	color: #FFF;
+	font-weight: 700;
+}
+#portfolio .portfolio a:hover{
+	text-decoration: none;	
+}
+#portfolio .portfolio:hover a{
   transform: scale(1.2);
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
